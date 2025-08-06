@@ -3,6 +3,8 @@ from email.mime.text import MIMEText
 import smtplib
 import os
 from dotenv import load_dotenv
+
+
 def main():
     server = smtplib.SMTP_SSL('smtp.yandex.ru:465')
     load_dotenv()
@@ -27,4 +29,5 @@ def main():
 
 
 if __name__=="main":
+
     main()
